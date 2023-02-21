@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saeps",
+  "info": {
+    "singularName": "saep",
+    "pluralName": "saeps",
+    "displayName": "saep",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "capacite": {
+      "type": "decimal"
+    },
+    "nombre_reservoir": {
+      "type": "integer"
+    },
+    "nombre_population": {
+      "type": "integer"
+    },
+    "ressources_en_eau": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ressource-en-eau.ressource-en-eau",
+      "mappedBy": "saep"
+    },
+    "adresse": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::adresse.adresse"
+    }
+  }
+}

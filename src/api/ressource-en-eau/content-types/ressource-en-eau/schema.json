@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ressource_en_eaux",
+  "info": {
+    "singularName": "ressource-en-eau",
+    "pluralName": "ressource-en-eaux",
+    "displayName": "Ressource en eau"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "saep": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::saep.saep",
+      "inversedBy": "ressources_en_eau"
+    }
+  }
+}
