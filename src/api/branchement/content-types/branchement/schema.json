@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branchements",
+  "info": {
+    "singularName": "branchement",
+    "pluralName": "branchements",
+    "displayName": "Branchement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  }
+}
