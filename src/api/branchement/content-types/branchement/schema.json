@@ -4,7 +4,8 @@
   "info": {
     "singularName": "branchement",
     "pluralName": "branchements",
-    "displayName": "Branchement"
+    "displayName": "Branchement",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "label": {
+      "type": "string"
+    },
+    "code": {
       "type": "string"
     }
   }

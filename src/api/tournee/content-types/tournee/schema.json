@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tournees",
+  "info": {
+    "singularName": "tournee",
+    "pluralName": "tournees",
+    "displayName": "Tournée",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "saep": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::saep.saep"
+    },
+    "cloturee": {
+      "type": "boolean"
+    },
+    "user_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-detail.user-detail"
+    },
+    "terminee": {
+      "type": "boolean"
+    },
+    "facturee": {
+      "type": "boolean"
+    }
+  }
+}

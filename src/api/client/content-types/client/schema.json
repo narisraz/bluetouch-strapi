@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "num_contrat": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "branchement": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::branchement.branchement"
+    },
+    "compteur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::compteur.compteur",
+      "inversedBy": "client"
+    },
+    "adresse": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::adresse.adresse",
+      "inversedBy": "client"
+    },
+    "etat_branchement": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::etat-branchement.etat-branchement"
+    },
+    "taille_menage": {
+      "type": "integer"
+    },
+    "saep": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::saep.saep"
+    },
+    "tournee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tournee.tournee"
+    },
+    "historique_indices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::historique-index.historique-index",
+      "mappedBy": "client"
+    },
+    "factures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::facture.facture",
+      "mappedBy": "client"
+    },
+    "solde": {
+      "type": "biginteger"
+    }
+  }
+}

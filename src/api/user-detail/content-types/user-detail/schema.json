@@ -20,7 +20,24 @@
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "user_role": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-role.user-role"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }

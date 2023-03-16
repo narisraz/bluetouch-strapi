@@ -24,8 +24,7 @@
     "ressources_en_eau": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::ressource-en-eau.ressource-en-eau",
-      "mappedBy": "saep"
+      "target": "api::ressource-en-eau.ressource-en-eau"
     },
     "adresse": {
       "type": "relation",

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "historique_indices",
+  "info": {
+    "singularName": "historique-index",
+    "pluralName": "historique-indices",
+    "displayName": "Historique index",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "decimal"
+    },
+    "date_tournee": {
+      "type": "biginteger"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::client.client",
+      "inversedBy": "historique_indices"
+    }
+  }
+}

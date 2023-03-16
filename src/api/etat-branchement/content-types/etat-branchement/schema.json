@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etat_branchements",
+  "info": {
+    "singularName": "etat-branchement",
+    "pluralName": "etat-branchements",
+    "displayName": "Etat branchement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

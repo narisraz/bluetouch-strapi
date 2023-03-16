@@ -26,6 +26,18 @@
     },
     "longitude": {
       "type": "string"
+    },
+    "rue": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client",
+      "mappedBy": "adresse"
     }
   }
 }

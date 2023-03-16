@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "factures",
+  "info": {
+    "singularName": "facture",
+    "pluralName": "factures",
+    "displayName": "Facture",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "montant": {
+      "type": "decimal"
+    },
+    "date": {
+      "type": "biginteger"
+    },
+    "regle": {
+      "type": "boolean"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::client.client",
+      "inversedBy": "factures"
+    },
+    "tournee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tournee.tournee"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "encaisse": {
+      "type": "decimal"
+    }
+  }
+}

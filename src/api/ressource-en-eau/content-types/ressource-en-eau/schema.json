@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ressource-en-eau",
     "pluralName": "ressource-en-eaux",
-    "displayName": "Ressource en eau"
+    "displayName": "Ressource en eau",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,11 +15,8 @@
     "label": {
       "type": "string"
     },
-    "saep": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::saep.saep",
-      "inversedBy": "ressources_en_eau"
+    "code": {
+      "type": "string"
     }
   }
 }

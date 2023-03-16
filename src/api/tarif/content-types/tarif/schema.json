@@ -37,6 +37,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::branchement.branchement"
+    },
+    "saep": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::saep.saep"
     }
   }
 }
