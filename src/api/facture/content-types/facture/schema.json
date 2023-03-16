@@ -37,6 +37,11 @@
     },
     "encaisse": {
       "type": "decimal"
+    },
+    "saep": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::saep.saep"
     }
   }
 }
