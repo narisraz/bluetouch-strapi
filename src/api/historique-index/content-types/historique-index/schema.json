@@ -23,6 +23,14 @@
       "relation": "manyToOne",
       "target": "api::client.client",
       "inversedBy": "historique_indices"
+    },
+    "valide": {
+      "type": "boolean"
+    },
+    "tournee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tournee.tournee"
     }
   }
 }
