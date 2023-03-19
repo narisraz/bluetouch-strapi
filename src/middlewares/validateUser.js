@@ -7,9 +7,8 @@
 module.exports = (config, { strapi }) => {
   
   return async (ctx, next) => {
-    const isAdmin = ctx.url.includes('admin')
-    const i18n = ctx.url.includes('i18n')
-    if (ctx.request && ctx.request.header && ctx.request.header.authorization && !isAdmin && !i18n) {
+    const isApi = ctx.url.includes('/api/')
+    if (ctx.request && ctx.request.header && ctx.request.header.authorization && isApi) {
       strapi.log.info('In validateUser middleware.');
       strapi.log.info(`Try to connect to ${ctx.url}.`);
 
